@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using DataHandler.Inject;
 using ExcelSheetHandler;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Newtonsoft.Json;
@@ -26,7 +27,7 @@ namespace Unit_Test
 
             var target = new ExampleClass();
 
-            SheetRowDataInjector.Instance.Inject(raw, target);
+            DataInjector.Instance.Inject(raw, target);
 
             Assert.AreEqual(123, target.Id);
             Assert.AreEqual(45.67f, target.Price);
@@ -36,7 +37,6 @@ namespace Unit_Test
             Assert.AreEqual(2, target.HasItemId[1]);
         }
     }
-
     /// <summary>
     /// SheetRawData에서 직렬화된 JSON을 역직렬화할 수 있는 예제 클래스
     /// </summary>
@@ -48,4 +48,5 @@ namespace Unit_Test
         public bool IsActive { get; set; }
         public List<int> HasItemId { get; set; }
     }
+
 }

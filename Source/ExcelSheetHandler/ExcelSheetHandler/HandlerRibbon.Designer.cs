@@ -39,8 +39,8 @@
             this.GenerateClassCodeBtn = this.Factory.CreateRibbonButton();
             this.GenerateJsonBtn = this.Factory.CreateRibbonButton();
             this.GenerateBinaryBtn = this.Factory.CreateRibbonButton();
-            this.ToJsonBtn = this.Factory.CreateRibbonButton();
             this.SecretKeyEditBox = this.Factory.CreateRibbonEditBox();
+            this.ToJsonBtn = this.Factory.CreateRibbonButton();
             this.Handler.SuspendLayout();
             this.ReadGroup.SuspendLayout();
             this.SuspendLayout();
@@ -80,17 +80,17 @@
             this.GenerateBinaryBtn.Name = "GenerateBinaryBtn";
             this.GenerateBinaryBtn.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.GenerateBinaryBtn_Click);
             // 
-            // ToJsonBtn
-            // 
-            this.ToJsonBtn.Label = "";
-            this.ToJsonBtn.Name = "ToJsonBtn";
-            // 
             // SecretKeyEditBox
             // 
             this.SecretKeyEditBox.Label = "Secret Key";
             this.SecretKeyEditBox.Name = "SecretKeyEditBox";
             this.SecretKeyEditBox.Text = "3rHq2Yv8i9Hc5vZ0xJ7i1Q==";
             this.SecretKeyEditBox.TextChanged += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.SecretKeyEditBox_TextChanged);
+            // 
+            // ToJsonBtn
+            // 
+            this.ToJsonBtn.Label = "";
+            this.ToJsonBtn.Name = "ToJsonBtn";
             // 
             // HandlerRibbon
             // 

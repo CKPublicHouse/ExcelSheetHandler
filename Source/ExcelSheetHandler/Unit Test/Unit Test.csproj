@@ -59,6 +59,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DataHandler\DataHandler.csproj">
+      <Project>{b8869e5f-0df6-40f6-9260-1da5e648ca5e}</Project>
+      <Name>DataHandler</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ExcelSheetHandler\ExcelSheetHandler.csproj">
       <Project>{B4BC232A-A2C1-4D11-91E9-6B090C644ADD}</Project>
       <Name>ExcelSheetHandler</Name>
